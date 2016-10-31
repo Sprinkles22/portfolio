@@ -1,0 +1,493 @@
+// Copyright (C) YOOtheme GmbH, http://www.gnu.org/licenses/gpl.html GNU/GPL */
+
+@import "../less/theme.less";
+.uk-article + .uk-article {
+    margin-top: 0 !important;
+}
+.uk-container {
+    width: 100%;
+
+}
+.ca-titling {
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 900;
+
+}
+.uk-overlay-background {
+    transition: all 0.5s;
+}
+.tm-logo img {
+    margin-top: 75px;
+}
+.nr-image-scale {
+    transition: all 0.2s ease-in-out;
+    -webkit-transform: scale(1) rotate(0);
+    -moz-transform: scale(1) rotate(0);
+    -ms-transform: scale(1) rotate(0);
+    transform: scale(1) rotate(0);
+    &:hover {
+        -webkit-transform: scale(1.1) rotate(5deg);
+    -moz-transform: scale(1.1) rotate(5deg);
+    -ms-transform: scale(1.1) rotate(5deg);
+    transform: scale(1.1) rotate(5deg);
+    }
+}
+.nr-space-clip {
+    color: red;
+    -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(transparent, transparent), url(http://caitlinalexander.net/wp-content/uploads/2016/05/nebula-space-hd-wallpaper-1920x1200-7028.jpg) repeat;
+    background: -o-linear-gradient(transparent, transparent);
+    -webkit-background-clip: text;
+    background-attachment: fixed;
+    span {
+    display: block;
+    line-height: 80%;
+    font-weight: 700;
+    &:first-child {
+        font-size:60px;
+    }
+    &:nth-child(2) {
+        font-size: 120px;
+    }
+    &:nth-child(3) {
+        font-size: 180px;
+    }
+    &:last-child {
+        font-size: 41px;
+    }
+    }
+}
+
+.tm-stalker {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    border-top-color: #8E3AA2;
+    border-right-color: #5A83CE;
+    border-bottom-color: #fff;
+}
+.tm-headerbar .tm-logo {
+    float: none;
+}
+.space-image {
+    background-image: url('http://caitlinalexander.net/wp-content/uploads/2016/05/nebula-space-hd-wallpaper-1920x1200-7028.jpg');
+    background-attachment: fixed;
+}
+.uk-star-container {
+    background-image: url('http://caitlinalexander.net/wp-content/uploads/2016/05/finerastrolines.png');
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center top;
+    background-color: rgba(255, 255, 255, 0.55);
+    max-width:2600px;
+}
+.ca-portfolio {
+    .uk-panel {
+        padding: 0;
+        background: #fff;
+        text-align:center;      
+        box-shadow: 0 0 2px rgba(7, 45, 93, 0.38);
+    }
+}.uk-navbar-nav > li > a {
+    text-transform: uppercase;
+    background: rgba(255,255,255,0.2);
+    box-shadow: none;
+    margin: 0 7px;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+    -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    &:hover {
+        -moz-transform: scale(1);
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+        box-shadow: 0 0 2px rgba(91, 7, 93, 0.38);
+    }
+}
+.uk-navbar-nav > li.uk-active > a:hover {
+    background-image: url('http://caitlinalexander.net/wp-content/uploads/2016/05/button.jpg');
+    background-attachment: fixed;
+}
+.tm-top-b {
+    background-image: url('http://caitlinalexander.net/wp-content/uploads/2016/05/nebula-space-hd-wallpaper-1920x1200-7028.jpg');
+    background-attachment:fixed;
+    background-size: cover;
+    position:relative;
+    padding: 100px 0;
+    min-height: 500px;
+    &:before {
+        background-image: url('http://caitlinalexander.net/wp-content/uploads/connected-bg.png');
+        width: 100%;
+        background-blend-mode: hard-light;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        position: absolute;
+        top:0;
+        left:0;
+    }
+}
+.tm-middle {
+ //   background: #fff;
+}
+.tm-bottom-a {
+    margin-top: 0 !important;
+    background-image: url('http://caitlinalexander.net/wp-content/uploads/2016/05/nebula-space-hd-wallpaper-1920x1200-7028.jpg');
+    background-attachment:fixed;
+    background-size: cover;
+    position:relative;
+    &:before {
+        background-image: url('http://caitlinalexander.net/wp-content/uploads/2016/05/splater.png');
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+    }
+    .uk-container {
+        margin-top:200px;
+    }
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    //text-transform:uppercase;
+    letter-spacing: 1px;
+    font-family: Montserrat;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    //text-transform:uppercase;
+    letter-spacing: 1px;
+    font-family: Montserrat;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    //text-transform:uppercase;
+    letter-spacing: 1px;
+    font-family: Montserrat;
+}
+:-moz-placeholder { /* Firefox 18- */
+    //text-transform:uppercase;
+    letter-spacing: 1px;
+    font-family: Montserrat;
+}
+.tm-totop-scroller {
+    top: auto;
+    bottom: 0;
+    right: 50%;
+    color:#fff;
+}
+.uk-modal-dialog-large {
+    height: 90vh;    
+    padding: 0px;
+    .uk-grid {
+        margin-left: 0 !important;
+    }
+    }
+.zoom-bg {
+    background-size: contain;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;   
+    top: 0;
+    width: 100%;
+    &:hover {
+      background-size:cover;  
+      cursor: crosshair;
+    }
+}
+.port-thumb-list {
+    li {
+        display:inline-block;
+        opacity: 1;
+        transition: all 0.5s;
+        img {
+            width:75px;
+            margin: 5px;
+            border: 0 !important;
+            box-shadow: 0 0 2px rgba(91, 7, 93, 0.38);
+        }
+        &:not(.uk-active) {
+            opacity: 0.5;
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+
+}
+.uk-modal-dialog > .uk-close:first-child {
+    margin: 10px 10px 0 0;
+
+}
+.uk-button-primary {
+    background-image: url('http://caitlinalexander.net/wp-content/uploads/2016/05/nebula-space-hd-wallpaper-1920x1200-7028.jpg');
+    background-attachment: fixed;
+    background-color:#fff;
+    text-transform: uppercase;
+    font-family: Montserrat;
+    transition: all 0.3s;
+    -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    background-color: #342543;
+    transform: scale(1.05);
+    &:hover,&:disabled {
+        -moz-transform: scale(1);
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+        background:#fff;
+        color: #7f73a6;
+        box-shadow: 0 0 2px rgba(91, 7, 93, 0.38);
+    }
+}
+.uk-panel-box-secondary {
+    box-shadow: 0 0 1px rgba(91, 7, 93, 0.18);
+}
+.uk-button-roundadmin {
+    border-radius: 100%;
+    position:relative;
+    padding:0;
+    &:before {
+        padding-bottom: 100%;
+        content: '';
+        display:block;
+    }
+    span {
+        position: absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        .uk-flex;
+        .uk-flex-center;
+        .uk-flex-middle;
+    }
+}
+.uk-big-title {
+    .uk-panel-title {
+        .uk-h1 !important;
+        color: #CBC0F1 !important;
+        .uk-text-center;
+        .uk-margin-large; 
+        .uk-margin-large-top;
+        text-transform: uppercase;
+    }
+}
+#window.expand {
+    max-height: 650px;
+    overflow: hidden;
+    -webkit-transition: max-height 1s;
+    -moz-transition: max-height 1s;
+    -ms-transition: max-height 1s;
+    -o-transition: max-height 1s;
+    transition: max-height 1s;
+        border-bottom: 1px solid #E1E8F6;
+    padding-bottom: 50px;
+}
+#window.expand.more {
+    max-height: 10000px !important;
+    -webkit-transition: max-height 1s;
+    -moz-transition: max-height 1s;
+    -ms-transition: max-height 1s;
+    -o-transition: max-height 1s;
+    transition: max-height 1s;
+}
+.uk-button-more {
+    font-size:72px;
+    transition: all 0.2s;
+    -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    padding: 0px;
+    position: relative;
+    top: 0;
+    color: #58A6CC;
+    background:transparent;
+    .uk-margin-large-top;
+    &:hover {
+        -moz-transform: scale(1);
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+        color:#000;
+        background: transparent;
+        i.uk-icon.expand { top: 10px;}
+        i.uk-icon.expand.more {top :0;}
+    }
+    i.uk-icon.expand {
+        position: relative;
+        top: 0;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: color 0.5s ease, transform 1s ease, top 0.2s ease;
+        -moz-transition: color 0.5s ease, transform 1s ease, top 0.2s ease;
+        -ms-transition: color 0.5s ease, transform 1s ease, top 0.2s ease; /* IE10 is actually unprefixed */
+        -o-transition: color 0.5s ease, transform 1s ease, top 0.2s ease;
+        transition: color 0.5s ease, transform 1s ease, top 0.2s ease;
+        padding: 0px;
+        background-color: transparent;   
+    }
+    i.uk-icon.expand.more {
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
+        top: 10px;
+    }
+}
+.grad {
+    background: -moz-linear-gradient(top, rgba(255,255,255,0) 70%, rgba(255,255,255,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 70%,rgba(255,255,255,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 70%,rgba(255,255,255,1) 100%);
+}
+.uk-subnav {
+    .uk-margin-large-bottom;
+    li.uk-active a {
+        color: #58A6CC;
+    }
+    li a {
+        font-family: Montserrat;
+        text-transform: uppercase;
+        font-size:16px;
+        &:hover {
+            color: #7f73a6;
+        }
+    }
+}.uk-panel-galatic {
+    background-image: url('http://caitlinalexander.net/wp-content/uploads/2016/05/nebula-space-hd-wallpaper-1920x1200-7028.jpg');
+    background-attachment: fixed;
+    border-bottom: 1px solid #E1E8F6;
+    border-top: 1px solid #E1E8F6;
+    max-width: 900px;
+    .uk-panel {
+        background: #fff;
+        
+        p {text-align: justify;}
+    }
+}
+.uk-overlay-background {
+    background: rgba(1, 42, 72, 0.8);
+}
+.alt-img {
+        background-position-x: 10px;
+    background-repeat: no-repeat;
+}
+.easyzoom {
+    position: relative;
+
+    /* 'Shrink-wrap' the element */
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+.easyzoom img {
+    vertical-align: bottom;
+}
+
+.easyzoom.is-loading img {
+    cursor: progress;
+}
+
+.easyzoom.is-ready img {
+    cursor: crosshair;
+}
+
+.easyzoom.is-error  img {
+    cursor: not-allowed;
+}
+
+.easyzoom-notice {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 150;
+    width: 10em;
+    margin: -1em 0 0 -5em;
+    line-height: 2em;
+    text-align: center;
+    background: #FFF;
+    box-shadow: 0 0 10px #888;
+}
+
+.easyzoom-flyout {
+    position:absolute;
+    z-index: 900;
+    overflow: hidden;
+    background: #FFF;
+}
+
+/**
+ * EasyZoom layout variations
+ */
+.easyzoom--overlay .easyzoom-flyout {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.easyzoom--overlay .easyzoom-flyout img {
+max-width:none;
+}
+@font-face {
+  font-family: 'Indie Flower';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../fonts/Indie-Flower-regular/Indie-Flower-regular.eot');
+  src: url('../fonts/Indie-Flower-regular/Indie-Flower-regular.eot?#iefix') format('embedded-opentype'),
+       local('Indie Flower'),
+       local('Indie-Flower-regular'),
+       url('../fonts/Indie-Flower-regular/Indie-Flower-regular.woff2') format('woff2'),
+       url('../fonts/Indie-Flower-regular/Indie-Flower-regular.woff') format('woff'),
+       url('../fonts/Indie-Flower-regular/Indie-Flower-regular.ttf') format('truetype'),
+       url('../fonts/Indie-Flower-regular/Indie-Flower-regular.svg#IndieFlower') format('svg');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../fonts/Montserrat-regular/Montserrat-regular.eot');
+  src: url('../fonts/Montserrat-regular/Montserrat-regular.eot?#iefix') format('embedded-opentype'),
+       local('Montserrat-Regular'),
+       local('Montserrat-regular'),
+       url('../fonts/Montserrat-regular/Montserrat-regular.woff2') format('woff2'),
+       url('../fonts/Montserrat-regular/Montserrat-regular.woff') format('woff'),
+       url('../fonts/Montserrat-regular/Montserrat-regular.ttf') format('truetype'),
+       url('../fonts/Montserrat-regular/Montserrat-regular.svg#Montserrat') format('svg');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-style: normal;
+  src: url('../fonts/Montserrat-700/Montserrat-700.eot');
+  src: url('../fonts/Montserrat-700/Montserrat-700.eot?#iefix') format('embedded-opentype'),
+       local('Montserrat-Bold'),
+       local('Montserrat-700'),
+       url('../fonts/Montserrat-700/Montserrat-700.woff2') format('woff2'),
+       url('../fonts/Montserrat-700/Montserrat-700.woff') format('woff'),
+       url('../fonts/Montserrat-700/Montserrat-700.ttf') format('truetype'),
+       url('../fonts/Montserrat-700/Montserrat-700.svg#Montserrat') format('svg');
+}
+
+
+.indie-text {
+    font-family: 'Indie Flower';
+}
